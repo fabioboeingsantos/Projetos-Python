@@ -16,11 +16,10 @@ frutas = ["maçã", "banana", "laranja"]
 print(frutas[0])  # Acessa a primeira fruta
 frutas.append("uva")  # Adiciona uma nova fruta
 print(frutas)
-# frutas = [`5,true, 20.5, "texto"] # lista heterogênea
+# frutas = [`5',true, 20.5, "texto"] # lista heterogênea
 
 #laco de repetição for e while
-for  nome in nomes:
-    print(nome)
+
 
 #categorize os salarios:
 #laco de repetição for:
@@ -36,7 +35,3 @@ for salario in salarios:
     else:
         print(f"Salário: {salario} - Alto")
         
-
-
-
-
