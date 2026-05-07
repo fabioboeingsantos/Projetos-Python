@@ -5,8 +5,12 @@ frutas = ["maçã", "banana", "laranja", "uva", "abacaxi"]
 fruta_favorita = input("Qual é a sua fruta favorita? ")
 if fruta_favorita not in frutas:
     print("Desculpe, essa fruta não está na lista.")
-    exit()
+    #exit()
     #se a fruta favortira do usuario nao estiver na lista, imprima uma mensagem de erro e encerre o programa.
+    print('adicione a fruta favorita do usuario na lista de frutas')
+    frutas.append(fruta_favorita)
+
+#adicione a fruta favorita do usuario na lista de frutas, caso ela nao esteja presente.
 
 #para cada posicao(indice) e fruta na lista frutas, faca:
 for posicao,fruta in enumerate(frutas):    
