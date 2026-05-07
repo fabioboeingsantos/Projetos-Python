@@ -31,22 +31,3 @@ descontoPercentual = round(descontoPercentual)
 #print("o valor do desconto foi de: ", descontoPercentual, "%")
 
 print(f"Sua compra deu R${total:.2f} com um desconto de {descontoPercentual}%")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-

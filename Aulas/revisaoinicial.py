@@ -19,6 +19,7 @@ print(frutas)
 # frutas = [`5',true, 20.5, "texto"] # lista heterogênea
 
 #laco de repetição for e while
+#for i in range(5):
 
 
 #categorize os salarios:
