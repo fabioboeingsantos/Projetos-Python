@@ -28,3 +28,4 @@ print('o valor total da compra com desconto é: R$', desconto)
 
 valordesconto = round(total - desconto, 2)
 print('o valor do desconto é: R$', valordesconto)
+

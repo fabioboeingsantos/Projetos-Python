@@ -14,4 +14,3 @@ if media < 5:
 elif media >= 5 and media < 7:
     print('voce esta em Recuperação')
 else:    print('Voce esta Aprovado')
-
