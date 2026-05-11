@@ -25,13 +25,13 @@ Qual a sequência de passos a ser feita para chegar ao resultado esperado? (pseu
 '''
 
 
-senhas = ['abc', 'segura123', '123456', 'oi']
-for senha in senhas:
-    if len(senha):
-        print(f' a senha{senha} e valida')
+#senhas = ['abc', 'segura123', '123456', 'oi']
+#for senha in senhas:
+ #   if len(senha):
+    #    print(f' a senha{senha} e valida')
 
-    else:
-        print (f' A senha {senha} deve possuir no minimo 6 caracter')
+  #  else:
+   #     print (f' A senha {senha} deve possuir no minimo 6 caracter')
 
 
 #LEN(usado para quantidade de caracteres). 
@@ -45,10 +45,15 @@ while tentativas <=3:
 #quando queremos que uma acao continue acontecendo, ate que um criterio seja satisfeito
 #so pode logar, se digitar a senha certa.
 
-senha = ''
-#while senha != '123456':
-   #senha = input('digite a senha correta')
-#print('bem vindo')
+senha = ""
+
+while senha != "123456":
+    senha = input('Digite a senha: ')
+    
+    if senha != "123456":
+        print('Senha incorreta, tente novamente.')
+
+print('Bem-vindo! Acesso liberado.')
 
 
 
