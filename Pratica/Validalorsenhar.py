@@ -25,13 +25,13 @@ Qual a sequência de passos a ser feita para chegar ao resultado esperado? (pseu
 '''
 
 
-#senhas = ['abc', 'segura123', '123456', 'oi']
-#for senha in senhas:
- #   if len(senha):
-    #    print(f' a senha{senha} e valida')
+senhas = ['abc', 'segura123', '123456', 'oi']
+for senha in senhas:
+   if len(senha):
+       print(f' a senha{senha} e valida')
 
-  #  else:
-   #     print (f' A senha {senha} deve possuir no minimo 6 caracter')
+   else:
+        print (f' A senha {senha} deve possuir no minimo 6 caracter')
 
 
 #LEN(usado para quantidade de caracteres). 
