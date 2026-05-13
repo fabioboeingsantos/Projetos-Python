@@ -1,3 +1,4 @@
+
 frutas = ["maçã", "banana", "laranja", "uva", "abacaxi"] 
 #lembrando que a posição do indice começa em 0, ou seja, maçã é a posição 0, banana é a posição 1 e assim por diante.
 #entra do usuario a fruta favorita
