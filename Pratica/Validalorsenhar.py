@@ -45,8 +45,11 @@ while tentativas <=3:
 #quando queremos que uma acao continue acontecendo, ate que um criterio seja satisfeito
 #so pode logar, se digitar a senha certa.
 
-#senha = ""
+#senha ='''
 
+
+
+''''''
 while (senha != "123456"):
     senha = input('Digite a senha: ')
     
@@ -61,9 +64,7 @@ while nome =='':
     nome = input('digite seu nome:')
 print(f'bem vindo{nome}')
 
-
-
-
+''''''
 
 
 
