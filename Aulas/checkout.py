@@ -29,7 +29,9 @@ print(mensagem)
 
 print(f"O total da compra deu: R${sum(subtotais)}")
 
+----------------------------------------
 
+----------------------------------------
 
 
 produtos = ["camiseta", "calça", "par meias", "boné", "touca"]
