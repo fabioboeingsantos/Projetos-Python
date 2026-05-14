@@ -2,11 +2,12 @@
 
 idade = 10
 numero = 0
-
+'''
 while numero != idade:
     numero = int(input('Digite sua idade '))
     if numero > 120:
         print('Acima')
+        '''
         
 
 idade = -1

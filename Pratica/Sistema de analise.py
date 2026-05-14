@@ -54,8 +54,6 @@ Processamento
 Saída final
 
 '''
-
-# --- PASSO 1: Preparando as listas e contadores (Caixas para guardar dados) ---
 lista_de_nomes = []
 lista_de_notas = []
 
@@ -63,11 +61,11 @@ contador_de_aprovados = 0
 contador_de_recuperacao = 0
 contador_de_reprovados = 0
 
-# Começamos a maior nota com zero (Qualquer nota digitada será maior que zero no início)
+
 maior_nota_da_turma = 0 
 nome_do_melhor_aluno = ""
 
-# --- PASSO 2: Coleta de dados (O momento de perguntar ao usuário) ---
+
 quantidade_de_alunos = int(input("Quantos alunos você deseja cadastrar? "))
 
 # O 'range' cria uma sequência de números para o loop seguir (Ex: se for 3, ele faz 0, 1, 2)
