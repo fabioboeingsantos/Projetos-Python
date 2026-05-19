@@ -35,4 +35,6 @@ for salario in salarios:
         print(f"Salário: {salario} - Médio")
     else:
         print(f"Salário: {salario} - Alto")
+
+        #   \n para pular linha na execucao do codigo.
         

@@ -2,6 +2,7 @@
 conte quantos numeros foram digitados(sem contar o 0)'''
 
 contador = 0
+numero = []
 
 numero = int(input('Digite um numero: ' ))
 
