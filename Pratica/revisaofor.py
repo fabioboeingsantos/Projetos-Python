@@ -18,7 +18,7 @@ for i in range(1, numero + 1):
 numero = int(input('Digite um numero; '))
 print(f'\ntabuada do {numero}')
 for i in range(1,11):
-    resultado = numero * 1
+    resultado = numero * i
     print(f'{numero} x {i} = {resultado}')
 
   
@@ -51,8 +51,8 @@ for i in range(1, limite + 1):
 soma_total = 0
 for i in range(1,6):
     numero = float(input(f'Digite o {i} numero: '))
-soma_total += numero
-media = soma_total / 5
+    soma_total += numero
+    media = soma_total / 5
 print (f'\nSoma total: {soma_total}')
 print (f'Media final: {media}')
 

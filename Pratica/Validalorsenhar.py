@@ -23,7 +23,8 @@ Qual a sequência de passos a ser feita para chegar ao resultado esperado? (pseu
 - se possuir, permitir, se nao, nao permitir
 
 '''
-
+--------------
+'''
 
 senhas = ['abc', 'segura123', '123456', 'oi']
 for senha in senhas:
@@ -45,11 +46,8 @@ while tentativas <=3:
 #quando queremos que uma acao continue acontecendo, ate que um criterio seja satisfeito
 #so pode logar, se digitar a senha certa.
 
-#senha ='''
+#senha =
 
-
-
-''''''
 while (senha != "123456"):
     senha = input('Digite a senha: ')
     
@@ -64,10 +62,21 @@ while nome =='':
     nome = input('digite seu nome:')
 print(f'bem vindo{nome}')
 
-''''''
+'''
 
+#------------
+usuarios = []
+senhas = []
 
-
+continuar = 's'
+while continuar == 's':
+    usuarios.append(input('Digite o nome:'))
+    senhas.append(input('Digite a senha:'))
+    continuar = input('Quer continuar(s/n)?')   
+for usuario in usuarios:
+    print(usuario)
+for senha in senhas:
+    print(senha)
 
 
 
