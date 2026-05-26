@@ -23,7 +23,7 @@ Qual a sequência de passos a ser feita para chegar ao resultado esperado? (pseu
 - se possuir, permitir, se nao, nao permitir
 
 '''
---------------
+
 '''
 
 senhas = ['abc', 'segura123', '123456', 'oi']
