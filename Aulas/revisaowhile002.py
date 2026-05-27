@@ -4,29 +4,66 @@
 '''
 #variaveis
 produtos = ['Pneu', 'Bateria', 'Óleo', 'Palheta']
-servicos = ['Alinhamento', 'Revisão', 'Lavagem_completa', 'lavagem_ducha']
+servicos = ['Alinhamento', 'Revisão', 'Lavagem_completa', 'polimento']
 
-preco_produtos = [230.00, 490.00, 149.99, 95.5]
-preco_servico = [55.00, 199.99, 40.00, 20.00]
+preco_produtos = [430.99, 490.99, 149.99, 95.99]
+preco_servicos = [55.99, 399.99, 40.99, 350,00]
 
 #input
 servico_produto_selecionado = input('"Você deseja ver nossos Produtos ou Servicos?"')
 
 if servico_produto_selecionado == 'produtos':
     for posicao, produto in enumerate(produtos):
-        print(f'{produto} {preco_produtos[posicao]:}')
+        print(f'{posicao +1 } - {produto} - R$: {preco_produtos[posicao]}.')
 
 elif servico_produto_selecionado == 'servicos':
-    for posicao, servicos in enumerate(servicos):
-            print(f'{servicos} {preco_servico[posicao]:}')
+    for posicao, servico in enumerate(servicos):
+            print(f'{posicao +1} - {servico} - R$: {preco_servicos[posicao]}.')
 else:
-    print('Digite para ver nossos produtos ou serviços?')
+    print('Opcao invalida. Digite "produtos" ou "Servicos?". ')
+    exit()
 
-produto_selecionado = input('Digite o número do item que deseja comprar: ')
+numero_selecionado = int(input('Digite o número do item que deseja comprar: '))
 
-if produto_selecionado == 'produtos':
+indice = numero_selecionado -1
 
-#regra de desconto
+if numero_selecionado <= 0 or numero_selecionado > len(produtos) or numero_selecionado > len(servicos):
+     print(f'Opcao invalida, Digite o numero de acordo com o produto, entre 1 e {len(produtos)}.')
 
-'''  A loja tem uma promoção. Antes de cobrar, se o valor original do item for maior que R$ 300,00,
-aplique um desconto de 10%  '''
+elif servico_produto_selecionado == 'produtos':
+    item_comprado = produtos[indice]
+    preco = preco_produtos[indice]
+    preco_cheio = preco
+    
+    if preco > 300:
+        preco = preco * 0.9
+        print(f'O produto selecionado foi {produtos[indice]}, e custa R$ {preco_produtos[indice]}, \nvoce tem direito a 10% de desconto, e passou a custar {preco}')
+    else:
+     print(f'O produto selecionado foi {produtos[indice]}, e custa R$ {preco_produtos[indice]}.')
+
+elif servico_produto_selecionado == 'servicos':
+    item_comprado = servico[indice]
+    preco = preco_servicos[indice]
+    preco_cheio = preco
+
+    if preco > 300:
+        preco = preco * 0.9
+        print(f'O servico selecionado foi {servicos[indice]}, e custa R$ {preco_servicos[indice]},\nvoce tem direaito a 10% de desconto, e passou a custar {preco}.2f ')
+    else:
+     print(f' o servico selecionado foi {servicos[indice]}, e custa R$ {preco_servicos[indice]}.2f')
+
+
+print('\n')
+print('\n')
+print('\n')
+print('\n')
+print('Auto Peças e Oficina')
+print('Blumenau - SC')
+print('27/05/2026')
+print('         CUPOM FISCAL             ')
+print('Item                         Valor')
+print(f'{item_comprado}                   R$: {preco_cheio}')
+if preco < preco_cheio:
+    desconto = preco_cheio - preco
+print(f'Desconto de 10%    R${desconto}')
+print(f'TOTAL A PAGAR         R$ {preco:>10.2f}')
