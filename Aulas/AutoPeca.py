@@ -52,10 +52,6 @@ elif servico_produto_selecionado == 'servicos':
     else:
      print(f' o servico selecionado foi {servicos[indice]}, e custa R$ {preco_servicos[indice]}.2f')
 
-
-print('\n')
-print('\n')
-print('\n')
 print('\n')
 print('Auto Peças e Oficina')
 print('Blumenau - SC')
@@ -65,5 +61,5 @@ print('Item                         Valor')
 print(f'{item_comprado}                   R$: {preco_cheio}')
 if preco < preco_cheio:
     desconto = preco_cheio - preco
-print(f'Desconto de 10%    R${desconto}')
+print(f'Desconto de 10%    R${desconto:.2f}')
 print(f'TOTAL A PAGAR         R$ {preco:>10.2f}')
