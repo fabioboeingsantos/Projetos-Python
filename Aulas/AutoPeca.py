@@ -14,13 +14,13 @@ servico_produto_selecionado = input('"Você deseja ver nossos Produtos ou Servic
 
 if servico_produto_selecionado == 'produtos':
     for posicao, produto in enumerate(produtos):
-        print(f'{posicao +1 } - {produto} - R$: {preco_produtos[posicao]}.')
+        print(f'{posicao + 1 } - {produto} - R$: {preco_produtos[posicao]}')
 
 elif servico_produto_selecionado == 'servicos':
     for posicao, servico in enumerate(servicos):
-            print(f'{posicao +1} - {servico} - R$: {preco_servicos[posicao]}.')
+            print(f'{posicao + 1} - {servico} - R$: {preco_servicos[posicao]}')
 else:
-    print('Opcao invalida. Digite "produtos" ou "Servicos?". ')
+    print('Opcao invalida. Digite "produtos" ou "Servicos". ')
     exit()
 
 numero_selecionado = int(input('Digite o número do item que deseja comprar: '))
