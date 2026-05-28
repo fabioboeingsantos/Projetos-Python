@@ -1,6 +1,6 @@
 
 while True:
-   
+    print('='*23 )
     print('===== Calculadora =====')
     
     menu = '''
@@ -31,12 +31,16 @@ while True:
         print(f'Resultado: {n1} + {n2} = {total}')
     elif opcao == '2':
         total = n1 - n2
-        print(f'Resultado: {n1} + {n2} = {total}')
+        print(f'Resultado: {n1} - {n2} = {total}')
         #print('total')
     elif opcao == '3':
         total = n1 * n2
         #print(total)
         print(f'Resultado: {n1} * {n2} = {total}')
-    #elif opcao == "4":
-        if n2 == 0: print('nao e possivel dividir')
+    elif opcao == "4":
+        total = {n1} / {n2}
+        if n2 == 0: print('Nao e possivel dividir por 0')
         else: print(f'Resultado: {n1} / {n2} = {total}')
+    
+    print('\n' + '='*23 + '\n')
+    

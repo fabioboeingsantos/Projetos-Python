@@ -1,0 +1,34 @@
+
+
+
+"=" * 41:
+O Python é esperto: se você multiplica uma string (texto) por um número, ele repete aquele caractere. Aqui, ele desenha uma linha com 41 sinais de igual.
+
+f"{...:^41}":
+Isso se chama F-string com formatação. O símbolo ^ diz ao Python: "Centralize o texto que está antes de mim dentro de um espaço de 41 caracteres". 
+Os espaços vazios viram espaços em branco automaticamente.
+
+exemplo:
+print("=" * 41)
+    print(f"{'🧮  CALCULADORA INTELIGENTE  🧮':^41}")
+    print("=" * 41)
+
+print('='*30 )
+faz o igual 30x
+
+\n
+pular linha
+
+print('\n' + '='*23 + '\n')
+# Uma linha para separar as repetições do menu
+
+
+---------------
+nome = "Ana"
+idade = 25
+
+mensagem = "Olá, meu nome é {} e eu tenho {} anos.".format(nome, idade)
+print(mensagem)
+# Saída: Olá, meu nome é Ana e eu tenho 25 anos.
+
+----------------

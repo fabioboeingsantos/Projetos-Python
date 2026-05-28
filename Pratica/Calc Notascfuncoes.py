@@ -1,7 +1,8 @@
-#Calculo de Notas com Funções
+#Calculo de Notas com CONDICIONAIS
 
 notas = int(input('Digite a quantidade de notas que deseja adicionar: '))
 notas_lista = []
+
 for i in range(notas):
     nota = float(input(f'Digite a nota {i+1}: '))
     notas_lista.append(nota)    
