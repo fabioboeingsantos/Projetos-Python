@@ -41,7 +41,9 @@ formatacao do numero, casas decimais.
 
 upper(): Se o usuário digitar "m" minúsculo, o Python transforma em "M" automaticamente. Isso reduz as suas condições pela metade.
 
-not in ['M', 'F']: Agora o Python testa de forma exata. Só passa se for rigorosamente a letra M ou a letra F. Nada de "culino" ou "fem" vai quebrar o seu programa!
+not in ['M', 'F']: Agora o Python testa de forma exata.
+Só passa se for rigorosamente a letra M ou a letra F. 
+Nada de "masc" ou "fem" vai quebrar o seu programa!
 
 from random import ... serve para trazer ferramentas de geração de números aleatórios para dentro do seu código.
 1. randint (Para sortear números inteiros)
