@@ -51,5 +51,5 @@ from random import ... serve para trazer ferramentas de geração de números al
 3. shuffle (Para embaralhar)
 4. random (Para números decimais)
 
-5 sleep
+5. sleep
 A função sleep é perfeita para dar um efeito dramático ou deixar as respostas do computador mais "humanas

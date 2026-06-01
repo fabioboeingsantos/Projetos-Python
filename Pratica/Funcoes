@@ -1,0 +1,53 @@
+1. Calcular desconto de um produto
+
+def calcular_desconto(preco, porcentagem):
+    desconto = preco * (porcentagem / 100)
+    return preco - desconto
+
+print(calcular_desconto(100, 10))  # 90
+
+2. Converter minutos em horas e minutos
+
+def converter_tempo(minutos):
+    horas = minutos // 60
+    resto = minutos % 60
+    return horas, resto
+
+h, m = converter_tempo(130)
+print(f"{h}h {m}min")  # 2h 10min
+
+3. Calcular média de notas
+def calcular_media(notas):
+    return sum(notas) / len(notas)
+
+print(calcular_media([7, 8, 9]))  # 8.0
+
+4. Verificar frete grátis
+def tem_frete_gratis(valor_compra):
+    if valor_compra >= 100:
+        return True
+    return False
+
+print(tem_frete_gratis(120))  # True
+
+5. Validar senha simples
+def senha_valida(senha):
+    return len(senha) >= 8
+
+print(senha_valida("12345678"))  # True
+
+6. Somar valores de um carrinho
+def total_carrinho(precos):
+    return sum(precos)
+
+print(total_carrinho([10, 20, 30]))  # 60
+
+7. Calcular consumo de combustível
+def consumo(distancia, litros):
+    return distancia / litros
+
+print(consumo(300, 25))  # 12 km/l
+
+
+
+
