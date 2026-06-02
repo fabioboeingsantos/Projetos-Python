@@ -1,16 +1,21 @@
-def m_linha():
-    print("-" * 30)
+def calcular_media(notas: list) ->float:
+    media = sum(notas) / len(notas)
+    return media
 
-m_linha()
-print("     TESTE DE FUNÇÃO     ")
-m_linha()
+contador = 1
+notas = []
 
-def mensagem(msg):
-    print("-" * 30)
-    print(msg)
-    print("-" * 30)
+while True:
+    notas = float(f'Digite a nota {contador} ou "sair" para sair')
+    notas.append(notas)
+    print('Nota foi registrada')
+    if notas == "sair":
+        break    
+        
+def consumo(distancia, litros):
+    return distancia / litros
 
-m_linha()
-print("     TESTE DE FUNÇÃO     ")
-m_linha()
-mensagem("Olá, Mundo!")
+def consumo(distancia, litros):
+    if litros == 0:
+        return "Litros não pode ser zero"
+    return distancia / litros

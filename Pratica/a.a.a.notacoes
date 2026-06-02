@@ -10,7 +10,7 @@ Os espaços vazios viram espaços em branco automaticamente.
 
 exemplo:
 print("=" * 41)
-    print(f"{'🧮  CALCULADORA INTELIGENTE  🧮':^41}")
+    print(f"{' CALCULADORA INTELIGENTE  ':^41}")
     print("=" * 41)
 
 print('='*30 )
