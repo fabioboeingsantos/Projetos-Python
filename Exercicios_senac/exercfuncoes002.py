@@ -10,10 +10,10 @@ def menu_simples ():
     """)
     print('='*30 )
 
-def celsius_para_fahrenheit(celsius):
+def celsius_para_fahrenheit():
     celsius = float(input('Digite a temperatura em Celsius: '))
     fh = (celsius * 9/5) + 32
-    print(f'{celsius} é igual a {fh}°F')
+    print(f'{celsius}°C é igual a {fh}°F')
 
 def reais_para_dolar():
     reais = float(input('Digite o valor em Reais: '))
@@ -34,15 +34,15 @@ while True:
         break
 
     elif opcao == '1':
-        def celsius_para_fahrenheit():
+        celsius_para_fahrenheit()
 
     elif opcao == '2':
-        def reais_para_dolar():        
+        reais_para_dolar()
 
     elif opcao == '3':
-        def horas_para_minutos():
-           
-        else:
+        horas_para_minutos()
+
+    else:
         print('Opção inválida')
 
 

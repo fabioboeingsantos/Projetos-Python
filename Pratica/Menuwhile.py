@@ -1,30 +1,14 @@
-
-def menu_simples ():
-    print('='*30 )
+def menu_simples():
+    print('=' * 30)
     print(f'{"Conversor de unidades":^30}')
-    print('='*30 )
+    print('=' * 30)
     print("""
-    1 - Celsius - fahrenheit 
-    2 - Reais - Dolar
-    3 - Horas - minutos
-    0 - SAIR    
-    """)
-    print('='*30 )
-
-
-
-def menu_simples ():
-    print('='*30 )
-    print(f'{"Menu de Frases":^30}')
-    print(""""
-    1 - Somar (+)
-    2 - Subtracao (-)
-    3 - Multiplicacao (*)
-    4 - Divisao (/)
-    0 - SAIR
-    
-    """)
-    print('='*30 )
+1 - Celsius → Fahrenheit 
+2 - Reais → Dólar
+3 - Horas → Minutos
+0 - SAIR    
+""")
+    print('=' * 30)
 
 
 def menu_simples ():
