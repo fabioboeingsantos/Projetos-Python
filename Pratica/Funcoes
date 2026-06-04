@@ -48,6 +48,58 @@ def consumo(distancia, litros):
 
 print(consumo(300, 25))  # 12 km/l
 
+8. Gerar saudação personalizada
+def saudar_usuario(nome):
+    print(f"Olá, {nome}! Seja muito bem-vindo!")
+
+# Chamando a função com argumentos diferentes:
+saudar_usuario("Carlos")   # Saída: Olá, Carlos! Seja muito bem-vindo!
+saudar_usuario("Mariana")  # Saída: Olá, Mariana! Seja muito bem-vindo!
+
+9. Calcular área de um retângulo
+def area_retangulo(base, altura):
+    return base * altura    
+
+10. Verificar se um número é par ou ímpar
+def par_ou_impar(numero):
+    if numero % 2 == 0:
+        return "Par"
+    else:
+        return "Ímpar"
+    
+print(par_ou_impar(10))  # Par
+print(par_ou_impar(7))   # Ímpar
+
+11. Calcular o fatorial de um número
+def fatorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * fatorial(n - 1)
+print(fatorial(5))  # 120
+
+12. Gerar um número aleatório entre 1 e 100
+import random
+def numero_aleatorio():
+    return random.randint(1, 100)
+print(numero_aleatorio())  # Exemplo: 42
+
+13. Verificar se um ano é bissexto
+def ano_bissexto(ano):
+    if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
+        return True
+    return False
+
+14. Múltiplos parâmetros e retorno (return)
+def calcular_soma(numero1, numero2):
+    resultado = numero1 + numero2
+    return resultado
+
+# Chamando a função e guardando o resultado em uma variável:
+total = calcular_soma(12, 8)
+
+print(total) 
+# Saída: 20
 
 
 

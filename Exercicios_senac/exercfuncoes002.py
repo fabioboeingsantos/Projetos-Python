@@ -10,7 +10,7 @@ def menu_simples ():
     """)
     print('='*30 )
 
-def celsius_para_fahrenheit(celsius):
+def celsius_para_fahrenheit():
     celsius = float(input('Digite a temperatura em Celsius: '))
     fh = (celsius * 9/5) + 32
     print(f'{celsius} é igual a {fh}°F')
@@ -34,16 +34,83 @@ while True:
         break
 
     elif opcao == '1':
-        def celsius_para_fahrenheit():
+        celsius_para_fahrenheit()
 
     elif opcao == '2':
-        def reais_para_dolar():        
+        reais_para_dolar()
 
-    elif opcao == '3':
-        def horas_para_minutos():
+    elif opcao == '3': 
+        horas_para_minutos()
            
     else:
         print('Opção inválida')
 
 
 
+
+
+
+
+
+
+
+
+
+'''
+def menu_simples():
+    print('=' * 30)
+    print(f'{"Conversor de unidades":^30}')
+    print('=' * 30)
+    print("""
+1 - Celsius para Fahrenheit
+2 - Reais para Dólar
+3 - Horas para Minutos
+0 - SAIR
+""")
+    print('=' * 30)
+
+
+def celsius_para_fahrenheit():
+    celsius = float(input('Digite a temperatura em Celsius: '))
+    fahrenheit = (celsius * 9 / 5) + 32
+    print(f'{celsius}°C é igual a {fahrenheit:.2f}°F')
+
+
+def reais_para_dolar():
+    reais = float(input('Digite o valor em Reais: '))
+    cotacao = 5.00  # ajuste conforme necessário
+    dolar = reais / cotacao
+    print(f'R$ {reais:.2f} é igual a US$ {dolar:.2f}')
+
+
+def horas_para_minutos():
+    horas = float(input('Digite o valor em Horas: '))
+    minutos = horas * 60
+    print(f'{horas} hora(s) é igual a {minutos} minuto(s)')
+
+
+while True:
+    menu_simples()
+    opcao = input('Escolha uma opção: ')
+
+    if opcao == '0':
+        print('Saindo...')
+        break
+
+    elif opcao == '1':
+        celsius_para_fahrenheit()
+
+    elif opcao == '2':
+        reais_para_dolar()
+
+    elif opcao == '3':
+        horas_para_minutos()
+
+    else:
+        print('Opção inválida! Tente novamente.')
+
+    input('\nPressione Enter para continuar...')
+    print()
+
+
+'''
