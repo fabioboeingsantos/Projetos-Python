@@ -12,5 +12,30 @@ no programa principal, As funcoes que mudam o saldo devem retornar o saldo atual
 - Guarde o retorno de volta, saldo = depositar(saldo, valor)
 - ver_saldo(saldo) so imprime, nao precisa retornar.
 - no saque, compare valor > saldo antes de subtrair.
+- 
 
 '''
+
+def menu_simples ():
+    print('='*30 )
+    print(f'\n{"Conta Bancaria":^30}')
+    print('\n 1 - Depositar')
+    print(' 2 - Sacar')
+    print(' 3 - Saldo')
+    print(' 0 - SAIR\n')
+    print('='*30 )
+
+saldo = 0.0
+
+def depositar(saldo, n2 ):
+    
+
+while True:
+    menu_simples()
+    opcao = int(input('Escolha sua opcao: '))
+
+    if opcao == 0:
+        print('Saindo')
+        break
+
+    
