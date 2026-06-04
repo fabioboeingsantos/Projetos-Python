@@ -20,6 +20,10 @@ def reais_para_dolar():
     reais_para_dolar = reais / 5
     print(f'{reais} é igual a {reais_para_dolar} Dólares')
 
+    #cotatao do dolar 5 reais.
+    #dolar = reais / cotacao
+    #E uma opcao tbm
+
 def horas_para_minutos():
     horas = float(input('Digite o valor em Horas: '))
     minutos = horas * 60

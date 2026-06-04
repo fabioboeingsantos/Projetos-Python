@@ -27,7 +27,27 @@ def menu_simples ():
 
 saldo = 0.0
 
-def depositar(saldo, n2 ):
+def depositar (saldo):
+    valor = float(input('Digite quanto deseja depositar:'))
+    saldo = valor + saldo
+    print(f'Voce depositou {valor:.2f}, Seu saldo atual\n R$:{saldo:.2f}')
+    return saldo
+
+def sacar(saldo):
+    valor = float(input('Digite quanto voce deseja sacar: '))
+    
+    if valor > saldo:
+        print('Saldo insuficiente')
+    else:
+        saldo = saldo - valor
+        print (f'Voce sacou R$: {valor:.2f}, Saldo restante {saldo:.2f}')
+    return saldo
+   
+
+def Saldo_total(saldo):
+    print(f'Seu saldo total e de R$:{saldo}')
+    return saldo
+
     
 
 while True:
@@ -35,7 +55,17 @@ while True:
     opcao = int(input('Escolha sua opcao: '))
 
     if opcao == 0:
-        print('Saindo')
+        print('Sair')
         break
 
-    
+    elif opcao == 1:
+        saldo = depositar(saldo)
+        
+    elif opcao == 2:
+        saldo = sacar(saldo)
+
+    elif opcao == 3:
+        Saldo_total(saldo)
+
+    else:
+        print('encerrando')

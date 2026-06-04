@@ -1,6 +1,4 @@
 
-
-
 "=" * 41:
 O Python é esperto: se você multiplica uma string (texto) por um número, ele repete aquele caractere. Aqui, ele desenha uma linha com 41 sinais de igual.
 
@@ -22,6 +20,8 @@ pular linha
 print('\n' + '='*23 + '\n')
 # Uma linha para separar as repetições do menu
 
+No Windows: Pressione a tecla Windows + . (ponto final) ou Windows + ; (ponto e vírgula).
+para emogis
 
 ---------------
 nome = "Ana"
@@ -53,3 +53,5 @@ from random import ... serve para trazer ferramentas de geração de números al
 
 5. sleep
 A função sleep é perfeita para dar um efeito dramático ou deixar as respostas do computador mais "humanas
+
+
