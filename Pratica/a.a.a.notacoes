@@ -53,5 +53,31 @@ from random import ... serve para trazer ferramentas de geração de números al
 
 5. sleep
 A função sleep é perfeita para dar um efeito dramático ou deixar as respostas do computador mais "humanas
+=====================================================
+
+self - ele mesmo, o proprio objeto falando dele mesmo
+fora da classe:                 dentro da classe:
+produto.nome                    self.nome
+
+=====================================================
+p1 = classe('exemplo', 9.00, 87.40) -- nome - quantidade - valor
+print('p1')
+
+class produto:
+    def__init__(nome,xxx,ooo):
+self.nome = nome
+self.xxx = xxx
+self.ooo = ooo
+
+    def mostrar(self):
+    print(f'{self.nome}: r$:{self.preco}')
+======================================================
+
+produtos []
+produtos classe(
+    produto 'exemplo', 9.00, 87.40
+)
+
+
 
 
