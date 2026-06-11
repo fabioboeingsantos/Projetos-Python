@@ -19,19 +19,23 @@ class Alunos():
         self.nota = nota
         
     def situacao(self):
-        if Alunos >= 6:
-            print('aprovado')
+        if self.nota >= 6:
+            return "Aprovado " 
+                
         else:
-            print('reprovado')
-
-
+            return 'Reprovado'
+        
     def exibir(self):
-        print(f'Nome: {self.nome}, Nota {self.nota}, situacao {self.situacao}')
+        print(f'Nome: {self.nome}, Nota: {self.nota} - Situacao {self.situacao()}')
 
-aluno01 = Alunos("fabio", 6.0)
-aluno02 = Alunos("fabia", 8.0)
 
-print('='*30 )
+aluno01 = Alunos("Fabio", 5.0)
+aluno02 = Alunos("Fabiana", 8.0)
+
+
+print('='*42 )
 aluno01.exibir()
-print('='*30 )
+print('='*42 )
+aluno02.exibir()
+print('='*42 )
 
