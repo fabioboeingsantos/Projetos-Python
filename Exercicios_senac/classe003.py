@@ -40,9 +40,9 @@ print('='*45 )
 '''
 def menu_simples():
     print('='*30)
-    print(f'\n{'Cadastro de alunos':^30}')
+    print(f'\n{"Cadastro de alunos":^30}')
     print('\n(1) - Cadastro')   
-    print('(2) - Listar alunos e Situacao')
+    print('(2) - Listar alunos / Situacao')
     print('(0) - Sair')
     print('\n' +'='*30)
 
@@ -60,9 +60,9 @@ def listar_alunos():
         print('Nao esta na lista. ')
         
     else:
-        for i in lista_de_alunos:
-            i.exibir()
-    print('=-'*30)
+        for aluno in lista_de_alunos:
+           aluno.exibir()
+    print('='*30)
     
 
 
