@@ -88,8 +88,9 @@ def listar_alunos():
         return
 
 
-    for aluno in lista_de_alunos:
-        aluno.exibir()
+    for posicao, aluno in enumerate(lista_de_alunos):
+       print(f' {posicao + 1} {aluno}')
+       aluno.exibir()
 
 lista_de_alunos = []
 
